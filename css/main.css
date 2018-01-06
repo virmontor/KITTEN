@@ -1,18 +1,65 @@
-.container {
+
+main{
   background-image: url("../assets/images/sunny-day.jpg");
-  background-size:contain;
   background-repeat: no-repeat;
-  overflow: auto;
+  background-position: center;
+  background-size: cover;
+  height: 800px;
 }
 
-.space {
-  height: 400px;
+#cat1 {
+  position: relative;
+  text-align: center;
+  margin-top: 500px;
+  display: block;
 }
 
-@media (min-width: 0px) and (max-width: 700px) {
+#cat2 {
+  display: block;
+  display: none;
+}
+
+#cat3 {
+  display: block;
+  display: none;
+}
+
+
+@media (max-width: 1000px) {
+
+  .container {
+    background-image: url("../assets/images/dawn.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+  }
+
+  #cat1 {
+    display: none;
+  }
+
+  #cat2  {
+    display: block;
+    position: relative;
+    text-align: center;
+    margin-top: 500px;
+  }
+}
+
+@media (max-width: 700px) {
+
   .container {
     background-image: url("../assets/images/night.jpg");
     background-size:cover;
     background-repeat: no-repeat;
   }
-}
+
+  #cat2  {
+    display: none;
+  }
+
+  #cat3  {
+    display: block;
+    position: relative;
+    text-align: center;
+    margin-top: 500px;
+  }
