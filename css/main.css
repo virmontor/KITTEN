@@ -1,0 +1,18 @@
+.container {
+  background-image: url("../assets/images/sunny-day.jpg");
+  background-size:contain;
+  background-repeat: no-repeat;
+  overflow: auto;
+}
+
+.space {
+  height: 400px;
+}
+
+@media (min-width: 0px) and (max-width: 700px) {
+  .container {
+    background-image: url("../assets/images/night.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+  }
+}
